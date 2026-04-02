@@ -130,10 +130,11 @@
 
 | 方向 | 代表模型/技术 | 推荐资源 |
 |------|------------|---------|
-| 计算机视觉（CV） | ResNet, YOLO, ViT, SAM | [Papers With Code - CV](https://paperswithcode.com/area/computer-vision) |
+| 计算机视觉（CV） | ResNet, YOLO, ViT, SAM 2 | [Papers With Code - CV](https://paperswithcode.com/area/computer-vision) |
 | 自然语言处理（NLP） | BERT, GPT, T5, LLaMA | [HuggingFace 模型库](https://huggingface.co/models) |
-| 语音识别 | Whisper, wav2vec 2.0 | [Whisper GitHub](https://github.com/openai/whisper) |
-| 生成模型 | GAN, VAE, 扩散模型 | [Diffusers 库](https://github.com/huggingface/diffusers) |
+| 语音识别与合成 | Whisper, wav2vec 2.0, Fish Speech | [Whisper GitHub](https://github.com/openai/whisper) |
+| 图像生成 | DALL-E 3, Flux, Stable Diffusion 3.5 | [Diffusers 库](https://github.com/huggingface/diffusers) |
+| 视频生成 | Sora, Kling, Runway Gen-3 | [Sora](https://openai.com/sora) |
 | 强化学习 | DQN, PPO, AlphaGo | [Spinning Up in Deep RL](https://spinningup.openai.com/) |
 | 图神经网络（GNN） | GCN, GAT, GraphSAGE | [PyTorch Geometric](https://pytorch-geometric.readthedocs.io/) |
 
@@ -147,35 +148,42 @@
 
 | 模型 | 机构 | 开源 | 特点 | 链接 |
 |------|------|------|------|------|
-| GPT-4 / GPT-4o | OpenAI | ❌ | 业界顶级闭源大模型 | [🔗](https://openai.com/gpt-4) |
+| GPT-4o / GPT-4.5 | OpenAI | ❌ | 业界顶级闭源大模型，GPT-4.5 为最新一代 | [🔗](https://openai.com/gpt-4) |
+| o1 / o3 | OpenAI | ❌ | 推理增强模型，擅长数学、编程与复杂推理 | [🔗](https://openai.com/index/learning-to-reason-with-llms/) |
 | ChatGPT | OpenAI | ❌ | 最广泛使用的 AI 对话助手 | [🔗](https://chat.openai.com/) |
-| Claude 3.x | Anthropic | ❌ | 强调安全对齐，长上下文能力强 | [🔗](https://www.anthropic.com/claude) |
-| Gemini 2.x | Google DeepMind | ❌ | 多模态能力强，深度集成 Google 生态 | [🔗](https://deepmind.google/technologies/gemini/) |
-| LLaMA 3 | Meta | ✅ | 最受欢迎的开源大模型系列 | [🔗](https://github.com/meta-llama/llama3) |
+| Claude 3.7 Sonnet | Anthropic | ❌ | 混合推理模型，支持扩展思考，长上下文能力强 | [🔗](https://www.anthropic.com/claude) |
+| Gemini 2.5 Pro | Google DeepMind | ❌ | 原生多模态思考模型，推理能力顶级 | [🔗](https://deepmind.google/technologies/gemini/) |
+| LLaMA 4 | Meta | ✅ | 最新一代开源大模型，支持多模态，MoE 架构 | [🔗](https://github.com/meta-llama/llama4) |
 | Mistral / Mixtral | Mistral AI | ✅ | 高效开源模型，MoE 架构 | [🔗](https://mistral.ai/) |
-| Qwen（通义千问） | 阿里巴巴 | ✅ | 中文能力强，多模态系列完善 | [🔗](https://github.com/QwenLM/Qwen) |
-| DeepSeek | 深度求索 | ✅ | 国产高性能开源大模型，推理能力突出 | [🔗](https://github.com/deepseek-ai/DeepSeek-V3) |
-| GLM（ChatGLM） | 清华大学 | ✅ | 清华开源，中文优化，支持双语 | [🔗](https://github.com/THUDM/ChatGLM3) |
+| Qwen 2.5（通义千问） | 阿里巴巴 | ✅ | 最新通义千问系列，编程与数学能力大幅提升 | [🔗](https://github.com/QwenLM/Qwen2.5) |
+| DeepSeek-V3 | 深度求索 | ✅ | 国产高性能开源大模型，MoE 架构，性能强劲 | [🔗](https://github.com/deepseek-ai/DeepSeek-V3) |
+| DeepSeek-R1 | 深度求索 | ✅ | 开源推理模型，推理能力媲美 OpenAI o1 | [🔗](https://github.com/deepseek-ai/DeepSeek-R1) |
+| Grok | xAI | ✅ | 马斯克 xAI 大模型，开源 Grok-1 | [🔗](https://github.com/xai-org/grok-1) |
+| GLM-4（ChatGLM） | 清华大学 | ✅ | 清华开源，中文优化，支持工具调用和多模态 | [🔗](https://github.com/THUDM/GLM-4) |
 | Baichuan（百川） | 百川智能 | ✅ | 中文优化开源大模型 | [🔗](https://github.com/baichuan-inc/Baichuan2) |
 | Yi（零一万物） | 零一万物 | ✅ | 李开复创立，中英双语能力出色 | [🔗](https://github.com/01-ai/Yi) |
 | InternLM（书生） | 上海 AI 实验室 | ✅ | 国产高性能开源模型，科研友好 | [🔗](https://github.com/InternLM/InternLM) |
-| Phi-3 / Phi-4 | Microsoft | ✅ | 小型高效模型，端侧部署友好 | [🔗](https://huggingface.co/microsoft/phi-4) |
-| Gemma 2 | Google | ✅ | 谷歌开源轻量级高性能模型 | [🔗](https://ai.google.dev/gemma) |
+| Phi-4 | Microsoft | ✅ | 小型高效模型，端侧部署友好 | [🔗](https://huggingface.co/microsoft/phi-4) |
+| Gemma 3 | Google | ✅ | 谷歌最新开源模型，支持多模态和多语言 | [🔗](https://ai.google.dev/gemma) |
+| Command R+ | Cohere | ✅ | 企业级 RAG 优化模型，长上下文 | [🔗](https://cohere.com/command) |
 
 ### 多模态大模型
 
 | 模型 | 机构 | 特点 | 链接 |
 |------|------|------|------|
 | GPT-4o | OpenAI | 文本+图像+语音全模态 | [🔗](https://openai.com/index/hello-gpt-4o/) |
-| Gemini 2.0 Flash | Google | 实时多模态，支持流式输出 | [🔗](https://deepmind.google/technologies/gemini/) |
-| Claude 3.5 Sonnet | Anthropic | 强视觉理解，支持 PDF 分析 | [🔗](https://www.anthropic.com/claude) |
-| LLaVA | 学术界 | 开源视觉语言模型 | [🔗](https://github.com/haotian-liu/LLaVA) |
-| Qwen-VL | 阿里巴巴 | 中文多模态模型，视觉理解强 | [🔗](https://github.com/QwenLM/Qwen-VL) |
-| InternVL | 上海 AI 实验室 | 开源多模态，性能强劲 | [🔗](https://github.com/OpenGVLab/InternVL) |
+| Gemini 2.5 Pro | Google | 原生多模态思考模型，支持流式输出 | [🔗](https://deepmind.google/technologies/gemini/) |
+| Claude 3.7 Sonnet | Anthropic | 强视觉理解，支持 PDF 分析与扩展思考 | [🔗](https://www.anthropic.com/claude) |
+| LLaVA-NeXT | 学术界 | 新一代开源视觉语言模型，能力大幅提升 | [🔗](https://github.com/haotian-liu/LLaVA) |
+| Qwen2.5-VL | 阿里巴巴 | 最新中文多模态模型，视觉理解和视频理解强 | [🔗](https://github.com/QwenLM/Qwen2.5-VL) |
+| InternVL 2.5 | 上海 AI 实验室 | 开源多模态，性能强劲，支持多种视觉任务 | [🔗](https://github.com/OpenGVLab/InternVL) |
 | DALL-E 3 | OpenAI | 高质量文生图 | [🔗](https://openai.com/dall-e-3) |
-| Stable Diffusion | Stability AI | 最流行的开源图像生成模型 | [🔗](https://github.com/CompVis/stable-diffusion) |
+| Flux | Black Forest Labs | 新一代开源图像生成模型，质量超越 SD | [🔗](https://github.com/black-forest-labs/flux) |
+| Stable Diffusion 3.5 | Stability AI | 最流行的开源图像生成模型最新版 | [🔗](https://stability.ai/) |
 | Midjourney | Midjourney | 商业图像生成，艺术风格出色 | [🔗](https://www.midjourney.com/) |
 | Sora | OpenAI | 文生视频里程碑模型 | [🔗](https://openai.com/sora) |
+| Kling（可灵） | 快手 | 国产文生视频模型，生成效果出色 | [🔗](https://kling.kuaishou.com/) |
+| Runway Gen-3 Alpha | Runway | 商业级文生视频，创意工具 | [🔗](https://runwayml.com/) |
 
 ### LLM 核心技术
 
@@ -185,6 +193,7 @@
 | 预训练（Pre-training） | 大规模语料上的自监督学习 | [GPT 系列论文](https://openai.com/research) |
 | 指令微调（SFT） | 让模型遵循人类指令 | [InstructGPT 论文](https://arxiv.org/abs/2203.02155) |
 | RLHF | 基于人类反馈的强化学习 | [RLHF 介绍博客](https://huggingface.co/blog/rlhf) |
+| GRPO | 基于群组的策略优化，DeepSeek-R1 训练方法 | [DeepSeek-R1 论文](https://arxiv.org/abs/2501.12948) |
 | RAG（检索增强生成） | 结合外部知识库增强模型能力 | [RAG 论文](https://arxiv.org/abs/2005.11401) |
 | 提示工程（Prompt Engineering） | 设计有效提示词的技术 | [Prompt Engineering Guide](https://www.promptingguide.ai/zh) |
 | 量化（Quantization） | 降低模型推理成本 | [GPTQ 论文](https://arxiv.org/abs/2210.17323) |
@@ -193,6 +202,9 @@
 | 长上下文（Long Context） | 扩展模型处理长文本的能力 | [RoPE 论文](https://arxiv.org/abs/2104.09864) |
 | MoE（混合专家模型） | 稀疏激活提升效率 | [Mixtral 论文](https://arxiv.org/abs/2401.04088) |
 | 思维链推理（CoT） | 提升模型复杂推理能力 | [CoT 论文](https://arxiv.org/abs/2201.11903) |
+| 推理增强（Test-time Compute） | 推理时增加计算量以提升推理能力 | [OpenAI o1 博客](https://openai.com/index/learning-to-reason-with-llms/) |
+| 蒸馏（Distillation） | 将大模型能力迁移到小模型 | [DistilBERT 论文](https://arxiv.org/abs/1910.01108) |
+| MCP（模型上下文协议） | Anthropic 开源的模型与工具交互协议 | [MCP 官方文档](https://modelcontextprotocol.io/) |
 
 ### LLM 学习资源
 
@@ -203,7 +215,10 @@
 | Andrej Karpathy：Let's build GPT | 视频 | 从零手写 GPT，深入理解 Transformer | [🔗](https://www.youtube.com/watch?v=kCc8FmEb1nY) |
 | Andrej Karpathy：Neural Networks: Zero to Hero | 视频系列 | 从零构建神经网络直到 LLM，强烈推荐 | [🔗](https://karpathy.ai/zero-to-hero.html) |
 | Hugging Face NLP 课程 | 在线课程 | HF 官方 NLP 与 LLM 入门教程 | [🔗](https://huggingface.co/learn/nlp-course) |
+| Hugging Face Agents 课程 | 在线课程 | HF 官方 AI Agent 开发教程 | [🔗](https://huggingface.co/learn/agents-course) |
 | A Survey of Large Language Models | 论文 | LLM 综述论文，覆盖全面 | [🔗](https://arxiv.org/abs/2303.18223) |
+| 3Blue1Brown：深度学习可视化 | 视频 | 用动画直觉理解神经网络与 Transformer | [🔗](https://www.youtube.com/playlist?list=PLZHQObOWTQDNU6R1_67000Dx_ZCJB-3pi) |
+| DeepSeek-R1 技术解读 | 论文/博客 | 理解推理模型训练范式的重要参考 | [🔗](https://arxiv.org/abs/2501.12948) |
 
 ---
 
@@ -227,18 +242,29 @@
 | 框架 | 描述 | 链接 |
 |------|------|------|
 | LangChain | 最流行的 LLM 应用开发框架，生态丰富 | [🔗](https://github.com/langchain-ai/langchain) |
+| LangGraph | LangChain 出品的图工作流 Agent 框架，支持复杂编排 | [🔗](https://github.com/langchain-ai/langgraph) |
 | LlamaIndex | 专注于数据索引和 RAG 的框架 | [🔗](https://github.com/run-llama/llama_index) |
 | AutoGen | 微软开源的多 Agent 对话框架 | [🔗](https://github.com/microsoft/autogen) |
 | CrewAI | 多 Agent 角色协作框架，易用性好 | [🔗](https://github.com/crewAIInc/crewAI) |
 | MetaGPT | 模拟软件公司的多 Agent 框架 | [🔗](https://github.com/geekan/MetaGPT) |
 | Dify | 开源 LLM 应用开发平台，支持可视化编排 | [🔗](https://github.com/langgenius/dify) |
+| OpenAI Agents SDK | OpenAI 官方 Agent 开发框架，支持工具调用与交接 | [🔗](https://github.com/openai/openai-agents-python) |
+| Google ADK | Google Agent Development Kit，构建多 Agent 系统 | [🔗](https://github.com/google/adk-python) |
 | AutoGPT | 早期自主 Agent 的代表项目 | [🔗](https://github.com/Significant-Gravitas/AutoGPT) |
 | BabyAGI | 基于任务驱动的自主 Agent | [🔗](https://github.com/yoheinakajima/babyagi) |
 | Camel | 多 Agent 角色扮演框架 | [🔗](https://github.com/camel-ai/camel) |
-| Phidata | 构建具备记忆和工具的 AI 助手 | [🔗](https://github.com/phidatahq/phidata) |
+| Phidata（Agno） | 构建具备记忆和工具的 AI 助手 | [🔗](https://github.com/agno-agi/agno) |
 | TaskWeaver | 微软开源的代码优先 Agent 框架 | [🔗](https://github.com/microsoft/TaskWeaver) |
 | Qwen-Agent | 阿里通义千问 Agent 框架 | [🔗](https://github.com/QwenLM/Qwen-Agent) |
-| Agno | 轻量级多模态 Agent 框架 | [🔗](https://github.com/agno-agi/agno) |
+| Mastra | TypeScript AI Agent 框架，集成 MCP 协议 | [🔗](https://github.com/mastra-ai/mastra) |
+| Smolagents | HuggingFace 轻量级 Agent 框架 | [🔗](https://github.com/huggingface/smolagents) |
+
+### Agent 协议与标准
+
+| 协议 | 描述 | 链接 |
+|------|------|------|
+| MCP（Model Context Protocol） | Anthropic 开源的模型上下文协议，标准化工具调用 | [🔗](https://modelcontextprotocol.io/) |
+| A2A（Agent-to-Agent Protocol） | Google 提出的 Agent 间通信协议 | [🔗](https://github.com/google/A2A) |
 
 ### Agent 应用案例
 
@@ -250,7 +276,12 @@
 | Perplexity AI | 基于 Agent 的 AI 搜索引擎 | [🔗](https://www.perplexity.ai/) |
 | Cursor | AI 编程助手，深度集成 LLM 的 IDE | [🔗](https://www.cursor.com/) |
 | GitHub Copilot | 微软/GitHub AI 编程助手 | [🔗](https://github.com/features/copilot) |
+| Claude Code | Anthropic 推出的终端 AI 编程 Agent | [🔗](https://docs.anthropic.com/en/docs/agents-and-tools/claude-code/overview) |
+| Windsurf | Codeium 推出的 AI IDE，支持多步骤编程 | [🔗](https://codeium.com/windsurf) |
+| Cline | VS Code AI 编程插件，支持自主代码编写 | [🔗](https://github.com/cline/cline) |
 | Manus | 通用 AI Agent，支持复杂任务自动化 | [🔗](https://manus.im/) |
+| Lovable | AI 全栈应用生成器，对话式构建 Web 应用 | [🔗](https://lovable.dev/) |
+| Bolt.new | StackBlitz 推出的 AI 全栈开发工具 | [🔗](https://bolt.new/) |
 
 ### Agent 学习资源
 
@@ -262,6 +293,8 @@
 | Multi AI Agent Systems with CrewAI | 课程 | 多 Agent 协作系统入门 | [🔗](https://www.deeplearning.ai/short-courses/multi-ai-agent-systems-with-crewai/) |
 | Lilian Weng：LLM Powered Autonomous Agents | 博客 | OpenAI 研究员写的 Agent 综述博客，必读 | [🔗](https://lilianweng.github.io/posts/2023-06-23-agent/) |
 | The Rise and Potential of LLM-based Agents | 论文 | LLM Agent 综述论文 | [🔗](https://arxiv.org/abs/2309.07864) |
+| MCP 官方文档与教程 | 文档 | 学习模型上下文协议，构建工具集成 | [🔗](https://modelcontextprotocol.io/introduction) |
+| Anthropic：Building effective agents | 博客 | Anthropic 官方 Agent 构建最佳实践指南 | [🔗](https://www.anthropic.com/research/building-effective-agents) |
 
 ---
 
@@ -276,8 +309,10 @@
 | llama.cpp | CPU 推理开源 LLM 的利器 | [🔗](https://github.com/ggerganov/llama.cpp) |
 | LM Studio | 桌面端本地 LLM 运行工具 | [🔗](https://lmstudio.ai/) |
 | TensorRT-LLM | NVIDIA 高性能 LLM 推理优化 | [🔗](https://github.com/NVIDIA/TensorRT-LLM) |
-| SGLang | 高性能 LLM 服务框架 | [🔗](https://github.com/sgl-project/sglang) |
+| SGLang | 高性能 LLM 服务框架，支持结构化生成 | [🔗](https://github.com/sgl-project/sglang) |
 | Text Generation Inference | HuggingFace 生产级 LLM 推理服务 | [🔗](https://github.com/huggingface/text-generation-inference) |
+| MLX | Apple 芯片优化的机器学习框架 | [🔗](https://github.com/ml-explore/mlx) |
+| Jan | 开源本地 AI 助手，支持离线运行 | [🔗](https://github.com/janhq/jan) |
 
 ### 模型微调
 
@@ -318,12 +353,16 @@
 | Anthropic API | Claude 系列官方 API | [🔗](https://www.anthropic.com/api) |
 | Google AI Studio | Gemini 系列免费调用入口 | [🔗](https://aistudio.google.com/) |
 | HuggingFace Inference API | 数千模型一键调用 | [🔗](https://huggingface.co/inference-api) |
+| OpenRouter | 多模型聚合 API 网关，一个 Key 调用多模型 | [🔗](https://openrouter.ai/) |
+| Together AI | 高性能开源模型推理平台 | [🔗](https://www.together.ai/) |
+| Groq | 超低延迟 LLM 推理平台（LPU 芯片） | [🔗](https://groq.com/) |
 | 阿里云百炼 | 阿里云大模型服务平台（含通义系列） | [🔗](https://bailian.console.aliyun.com/) |
 | 百度千帆 | 百度大模型服务平台（含文心系列） | [🔗](https://qianfan.cloud.baidu.com/) |
 | 腾讯混元 | 腾讯大模型服务 | [🔗](https://hunyuan.tencent.com/) |
 | 硅基流动（SiliconFlow） | 国内高性价比推理平台，聚合多模型 | [🔗](https://siliconflow.cn/) |
 | 月之暗面（Moonshot / Kimi） | 长文本理解能力强，国内流行 | [🔗](https://platform.moonshot.cn/) |
 | 智谱 AI（GLM） | 清华系大模型 API 服务 | [🔗](https://open.bigmodel.cn/) |
+| DeepSeek 开放平台 | 深度求索 API 服务，高性价比 | [🔗](https://platform.deepseek.com/) |
 
 ---
 
@@ -372,6 +411,9 @@
 | ReAct（2022） | 推理与行动结合的 Agent 框架 | [🔗](https://arxiv.org/abs/2210.03629) |
 | Mixtral of Experts（2024） | 高效混合专家架构 | [🔗](https://arxiv.org/abs/2401.04088) |
 | DeepSeek-V3（2024） | 高效开源大模型架构 | [🔗](https://arxiv.org/abs/2412.19437) |
+| DeepSeek-R1（2025） | 开源推理模型，RL 训练范式创新 | [🔗](https://arxiv.org/abs/2501.12948) |
+| Qwen2.5 Technical Report（2024） | 通义千问系列技术报告 | [🔗](https://arxiv.org/abs/2412.15115) |
+| LLaMA 3（2024） | Meta 开源大模型技术报告 | [🔗](https://arxiv.org/abs/2407.21783) |
 
 ### 论文资源平台
 
@@ -455,6 +497,8 @@
 | LLMSurvey | LLM 综述论文及相关资源 | [🔗](https://github.com/RUCAIBox/LLMSurvey) |
 | Awesome-Chinese-LLM | 中文大模型资源汇总 | [🔗](https://github.com/HqWu-HITCS/Awesome-Chinese-LLM) |
 | open-llms | 可商用的开源大模型列表 | [🔗](https://github.com/eugeneyan/open-llms) |
+| awesome-mcp-servers | MCP 服务器资源汇总 | [🔗](https://github.com/punkpeye/awesome-mcp-servers) |
+| awesome-deepseek-integration | DeepSeek 集成与应用汇总 | [🔗](https://github.com/deepseek-ai/awesome-deepseek-integration) |
 
 ---
 
