@@ -20,7 +20,7 @@
 ## 📖 目录
 
 - [🧮 AI 基础数学](#-ai-基础数学)
-- [🎨Agent Skills](url)
+- [🎨Agent Skills](https://github.com/YSGStudyHards/Awesome-AI/tree/main?tab=readme-ov-file#agent-skills)
 - [🤖 经典机器学习算法](#-经典机器学习算法)
 - [🧠 深度学习](#-深度学习)
 - [💬 大语言模型（LLM）](#-大语言模型llm)
