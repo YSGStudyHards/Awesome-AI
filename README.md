@@ -20,6 +20,7 @@
 ## 📖 目录
 
 - [🧮 AI 基础数学](#-ai-基础数学)
+- [🎨Agent Skills](url)
 - [🤖 经典机器学习算法](#-经典机器学习算法)
 - [🧠 深度学习](#-深度学习)
 - [💬 大语言模型（LLM）](#-大语言模型llm)
@@ -61,6 +62,18 @@
 | Calculus（MIT OpenCourseWare） | 视频课程 | MIT 单变量与多变量微积分公开课 | [🔗](https://ocw.mit.edu/courses/18-01-single-variable-calculus-fall-2006/) |
 | 《凸优化》（Boyd & Vandenberghe） | 书籍/课程 | 斯坦福凸优化经典教材，免费在线阅读 | [🔗](https://web.stanford.edu/~boyd/cvxbook/) |
 | 3Blue1Brown：微积分的本质 | 视频 | 直觉化理解微积分核心概念的动画系列 | [🔗](https://www.youtube.com/playlist?list=PLZHQObOWTQDMsr9K-rj53DwVRMYO3t5Yr) |
+
+---
+
+## 🎨Agent Skills
+> Agent Skills 本质上就是一套套包含指令、脚本和资源的文件夹。智能体可以发现并调用它们，从而让自己干活更准、更快。
+
+| 技能名称 | 技能描述 | 访问链接 |
+|------|------|------|
+| awesome-claude-skills  | 精选的 Claude 技能、资源和工具，用于自定义 Claude AI 工作流。 | https://github.com/ComposioHQ/awesome-claude-skills |
+| awesome-persona-distill-skills |这里的“人格蒸馏”主要指从对话、作品、资料或数字痕迹中提炼表达风格、决策框架与交互方式，不默认等同于对真实个体的完整还原。  |https://github.com/xixu-me/awesome-persona-distill-skills |
+|  |  | |
+|  |  | |
 
 ---
 
