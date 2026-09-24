@@ -500,7 +500,7 @@
 | Lilian Weng's Blog | OpenAI 研究员的高质量技术博客 | [🔗](https://lilianweng.github.io/) |
 | Sebastian Raschka's Blog | ML 研究员的高质量技术博客 | [🔗](https://sebastianraschka.com/blog/) |
 | The Gradient | AI 研究深度分析媒体 | [🔗](https://thegradient.pub/) |
-| AI Weekly | AI 行业周报 | [🔗](https://aiweekly.co/) |
+| AI Weekly | 追踪 AI 专家正在阅读和分享的内容，涵盖模型、融资、政策与研究 | [🔗](https://aiweekly.co/) |
 | 机器之心 | 国内领先 AI 科技媒体 | [🔗](https://www.jiqizhixin.com/) |
 | 量子位 | 国内 AI 资讯媒体 | [🔗](https://www.qbitai.com/) |
 | 新智元 | 国内 AI 前沿资讯 | [🔗](https://www.aiwire.net/) |
