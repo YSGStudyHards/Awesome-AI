@@ -74,6 +74,7 @@
 | awesome-persona-distill-skills |这里的“人格蒸馏”主要指从对话、作品、资料或数字痕迹中提炼表达风格、决策框架与交互方式，不默认等同于对真实个体的完整还原。  |https://github.com/xixu-me/awesome-persona-distill-skills |
 | colleague-skill | colleague-skill 是一个将 AI 人格化 和 企业知识管理 结合的创新项目。它不仅解决了企业知识流失的痛点，还通过模拟人类性格，探索了 AI 作为“数字分身”的可能性。 | https://github.com/titanwings/colleague-skill |
 | Huashu Design | Huashu Design · HTML-native design skill for Claude Code · Claude Code 里 HTML 原生的设计 skill · 高保真原型 / 幻灯片 / 动画 + 20 设计哲学 + 5 维评审 + MP4 导出 · Agent-agnostic。 | https://github.com/alchaincyf/huashu-design |
+| yylo-skills | 面向 AI 编程智能体的可复用工作流技能集：Ledger 看板任务管理、项目结构理解、任务规划与 Wiki 知识沉淀等 8 个 SKILL.md 技能，npx skills add 一键安装。 | https://github.com/yylo-dev/yylo-skills |
 |  |  | |
 |  |  | |
 |  |  | |
