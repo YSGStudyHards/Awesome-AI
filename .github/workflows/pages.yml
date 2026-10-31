@@ -38,8 +38,6 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
-      - uses: actions/configure-pages@v6
-
       - uses: actions/upload-pages-artifact@v5
         with:
           path: _site
@@ -51,6 +49,23 @@ jobs:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
     steps:
+      - name: 检查 GitHub Pages 配置
+        id: pages
+        uses: actions/configure-pages@v6
+
+      - name: 提示 Pages 配置修复方法
+        if: ${{ failure() && steps.pages.outcome == 'failure' }}
+        run: |
+          echo "::error::无法读取 Pages 配置。若日志为 404 / Not Found，请由仓库管理员在 Settings → Pages → Build and deployment 中将 Source 设为 GitHub Actions，然后重新运行工作流。其他错误请检查上一步日志和仓库权限。"
+          {
+            echo "### GitHub Pages 配置检查失败"
+            echo
+            echo "若上一步返回 404 / Not Found，请先由仓库管理员打开仓库的 **Settings → Pages → Build and deployment**，将 **Source** 设为 **GitHub Actions**，然后重新运行本工作流。Fork 仓库也需要单独完成此设置。"
+            echo
+            echo "默认 GITHUB_TOKEN 无法首次启用 Pages，仅添加 enablement: true 不能解决此问题。其他错误请根据上一步日志检查权限或服务状态。详见 CONTRIBUTING.md 中的 GitHub Pages 部署说明。"
+          } >> "$GITHUB_STEP_SUMMARY"
+          exit 1
+
       - name: 部署到 GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v5
