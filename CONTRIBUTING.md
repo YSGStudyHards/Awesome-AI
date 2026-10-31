@@ -66,6 +66,21 @@ python3 -m http.server 8000 --directory _site
 
 设置 `GITHUB_TOKEN` 环境变量后，本地构建也会拉取 GitHub 项目的 Star 数与头像。
 
+## 🌐 GitHub Pages 部署
+
+首次部署前，仓库管理员需要完成一次仓库设置（Fork 仓库也需要单独设置）：
+
+1. 打开仓库的 **Settings → Pages → Build and deployment**。
+2. 将 **Source** 设置为 **GitHub Actions**，而不是 **Deploy from a branch**；无需创建 `gh-pages` 分支。
+3. 打开 **Actions → 部署 GitHub Pages → Run workflow**，选择 `main` 并运行；如果已有失败记录，也可以选择 **Re-run all jobs**。
+4. 部署成功后，从 `deploy` 作业的 `github-pages` 环境链接访问站点。
+
+工作流先构建并上传 `_site/` 产物，再在部署作业中检查 Pages 配置并发布。后续推送到 `main` 的相关文件变更以及每周定时任务会自动更新站点。
+
+如果 `actions/configure-pages` 报 `Get Pages site failed` / `HttpError: Not Found`，通常是尚未完成上述初始化；这不是站点构建脚本出错。请先确认 Pages 已启用且 Source 为 GitHub Actions，再重新运行。若设置正确但仍失败，请检查 Actions 权限、仓库或组织的 Pages 策略及具体错误日志。
+
+工作流中的 `pages: write` 和 `id-token: write` 用于部署，不能让默认 `GITHUB_TOKEN` 首次启用 Pages。不要仅添加 `enablement: true`：该选项需要另行提供具有相应权限的 PAT 或 GitHub App 令牌。本项目采用管理员在设置页面一次性启用的方式，不需要新增密钥。
+
 ## 🚀 提交流程
 
 1. Fork 本仓库并新建分支，例如 `add-xxx-agent-framework`
