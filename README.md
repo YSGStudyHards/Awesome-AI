@@ -303,6 +303,7 @@
 | Manus | 通用 AI Agent，支持复杂任务自动化 | [🔗](https://manus.im/) |
 | Lovable | AI 全栈应用生成器，对话式构建 Web 应用 | [🔗](https://lovable.dev/) |
 | Bolt.new | StackBlitz 推出的 AI 全栈开发工具 | [🔗](https://bolt.new/) |
+| agent-qa | 具备持久记忆与经验证的自我改进能力的 AI 测试 Agent，覆盖 Web、Android 和 iOS | [🔗](https://www.vostride.com) |
 
 ### Agent 学习资源
 
