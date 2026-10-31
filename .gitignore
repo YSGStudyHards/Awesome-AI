@@ -1,0 +1,7 @@
+# 构建产物
+_site/
+
+# 依赖与系统文件
+node_modules/
+.DS_Store
+Thumbs.db

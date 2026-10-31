@@ -1,0 +1,140 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>{{TITLE}}</title>
+<meta name="description" content="{{DESCRIPTION}}">
+<meta name="keywords" content="Awesome AI,人工智能,AI 资源,AI 学习路线,机器学习,深度学习,大语言模型,LLM,AIGC,智能体,Agents,Agent Skills,MCP,RAG,AI 编程,提示工程,AI 书籍,AI 课程">
+<meta name="author" content="YSGStudyHards">
+<meta name="theme-color" content="#6366f1">
+<link rel="canonical" href="{{SITE_URL}}">
+<link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Awesome AI">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:title" content="{{TITLE}}">
+<meta property="og:description" content="{{DESCRIPTION}}">
+<meta property="og:url" content="{{SITE_URL}}">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="{{TITLE}}">
+<meta name="twitter:description" content="{{DESCRIPTION}}">
+<script>(function(){try{var t=localStorage.getItem('theme');if(t!=='light'&&t!=='dark')t=matchMedia('(prefers-color-scheme: dark)').matches?'dark':'light';document.documentElement.dataset.theme=t}catch(e){document.documentElement.dataset.theme='light'}})();</script>
+<link rel="stylesheet" href="{{CSS}}">
+<script type="application/ld+json">{{JSONLD}}</script>
+</head>
+<body>
+<div class="progress" id="progress" aria-hidden="true"></div>
+
+<header class="topbar">
+  <div class="topbar-inner">
+    <button class="icon-btn menu-btn" id="menuBtn" type="button" aria-label="打开分类导航" aria-controls="sidebar">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+    </button>
+    <a class="brand" href="#top" aria-label="Awesome AI 首页">
+      <img src="assets/favicon.svg" alt="" width="30" height="30">
+      <span class="brand-text">Awesome <b>AI</b></span>
+    </a>
+    <label class="search" for="q">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg>
+      <input id="q" type="search" placeholder="搜索 {{TOTAL}} 条资源：名称、描述、作者、链接…" autocomplete="off" spellcheck="false" enterkeyhint="search" aria-label="搜索资源">
+      <kbd>/</kbd>
+    </label>
+    <div class="top-actions">
+      <button class="icon-btn" id="randomBtn" type="button" title="随机发现一个资源" aria-label="随机发现一个资源">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3.5" y="3.5" width="17" height="17" rx="4"/><circle cx="8.5" cy="8.5" r="1.2" class="fill"/><circle cx="15.5" cy="8.5" r="1.2" class="fill"/><circle cx="12" cy="12" r="1.2" class="fill"/><circle cx="8.5" cy="15.5" r="1.2" class="fill"/><circle cx="15.5" cy="15.5" r="1.2" class="fill"/></svg>
+      </button>
+      <button class="icon-btn" id="themeBtn" type="button" title="切换深色 / 浅色模式" aria-label="切换深色或浅色模式">
+        <svg class="i-sun" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4.2"/><path d="M12 2.5v2.2M12 19.3v2.2M4.6 4.6l1.6 1.6M17.8 17.8l1.6 1.6M2.5 12h2.2M19.3 12h2.2M4.6 19.4l1.6-1.6M17.8 6.2l1.6-1.6"/></svg>
+        <svg class="i-moon" viewBox="0 0 24 24" aria-hidden="true"><path d="M20.5 14.6A8.5 8.5 0 0 1 9.4 3.5a8.5 8.5 0 1 0 11.1 11.1Z"/></svg>
+      </button>
+      <a class="gh-btn" href="{{REPO_URL}}" target="_blank" rel="noopener" aria-label="在 GitHub 上查看并 Star">
+        <svg viewBox="0 0 16 16" aria-hidden="true"><path d="M8 0c4.42 0 8 3.58 8 8a8.013 8.013 0 0 1-5.45 7.59c-.4.08-.55-.17-.55-.38 0-.27.01-1.13.01-2.2 0-.75-.25-1.23-.54-1.48 1.78-.2 3.65-.88 3.65-3.95 0-.88-.31-1.59-.82-2.15.08-.2.36-1.02-.08-2.12 0 0-.67-.22-2.2.82-.64-.18-1.32-.27-2-.27-.68 0-1.36.09-2 .27-1.53-1.03-2.2-.82-2.2-.82-.44 1.1-.16 1.92-.08 2.12-.51.56-.82 1.28-.82 2.15 0 3.06 1.86 3.75 3.64 3.95-.23.2-.44.55-.51 1.07-.46.21-1.61.55-2.33-.66-.15-.24-.6-.83-1.23-.82-.67.01-.27.38.01.53.34.19.73.9.82 1.13.16.45.68 1.31 2.69.94 0 .67.01 1.3.01 1.49 0 .21-.15.45-.55.38A7.995 7.995 0 0 1 0 8c0-4.42 3.58-8 8-8Z"/></svg>
+        <span class="gh-label">Star</span>{{REPO_STARS}}
+      </a>
+    </div>
+  </div>
+</header>
+
+<section class="hero" id="top">
+  <div class="hero-bg" aria-hidden="true"><span class="blob b1"></span><span class="blob b2"></span><span class="blob b3"></span><span class="mesh"></span></div>
+  <div class="hero-inner">
+    <a class="pill" href="{{REPO_URL}}/commits/main" target="_blank" rel="noopener"><span class="dot"></span>持续更新中 · 数据更新于 {{DATE}}</a>
+    <h1><span class="grad">Awesome AI</span></h1>
+    <p class="tagline">最全面、最权威的中文人工智能资源全景图</p>
+    <p class="lead">从数学基础、经典机器学习、深度学习，到大语言模型、多模态 AIGC、智能体、Agent Skills 与 MCP —— 系统整理 {{TOTAL_ROUND}} 条全球优质 AI 书籍、课程、论文、工具与开源项目，助你从零掌握人工智能。</p>
+    <div class="cta">
+      <a class="btn btn-primary" href="#overview">开始探索
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 5v14M6 13l6 6 6-6"/></svg>
+      </a>
+      <a class="btn btn-ghost" href="{{REPO_URL}}" target="_blank" rel="noopener">
+        <svg viewBox="0 0 16 16" class="fill" aria-hidden="true"><path d="M8 .25a.75.75 0 0 1 .673.418l1.882 3.815 4.21.612a.75.75 0 0 1 .416 1.279l-3.046 2.97.719 4.192a.751.751 0 0 1-1.088.791L8 12.347l-3.766 1.98a.75.75 0 0 1-1.088-.79l.72-4.194L.818 6.374a.75.75 0 0 1 .416-1.28l4.21-.611L7.327.668A.75.75 0 0 1 8 .25Z"/></svg>
+        Star 支持
+      </a>
+      <a class="btn btn-ghost" href="{{REPO_URL}}/blob/main/CONTRIBUTING.md" target="_blank" rel="noopener">贡献资源</a>
+    </div>
+    <div class="stats">{{STATS}}</div>
+  </div>
+</section>
+
+<section class="overview" id="overview">
+  <div class="overview-inner">
+    <div class="block-head">
+      <h2 class="block-title">分类全景</h2>
+      <p class="block-sub">{{PARTS}} 大板块 · {{SECTIONS}} 个分类，点击任意分类直达</p>
+    </div>
+    {{OVERVIEW}}
+  </div>
+</section>
+
+<div class="layout" id="content">
+  <aside class="sidebar" id="sidebar" aria-label="分类导航">
+    <div class="sidebar-head">分类导航</div>
+    <nav class="sidebar-nav">{{NAV}}</nav>
+  </aside>
+  <div class="scrim" id="scrim" aria-hidden="true"></div>
+  <main class="main" id="main">
+    <div class="toolbar" id="toolbar">
+      <div class="result" id="result" aria-live="polite">共 <b>{{TOTAL}}</b> 条精选资源</div>
+      <div class="filters">
+        <div class="seg" role="group" aria-label="资源类型">
+          <button type="button" class="active" data-kind="all">全部</button>
+          <button type="button" data-kind="gh">GitHub 项目</button>
+          <button type="button" data-kind="web">网站 / 文档</button>
+        </div>
+        <div class="seg" role="group" aria-label="排序方式">
+          <button type="button" class="active" data-sort="default">推荐顺序</button>
+          <button type="button" data-sort="stars">Star 最多</button>
+        </div>
+      </div>
+    </div>
+    <div class="empty" id="empty" hidden>
+      <div class="empty-emoji">🔍</div>
+      <p>没有找到相关资源，换个关键词试试？</p>
+      <p class="empty-sub">知道优质资源？欢迎 <a href="{{REPO_URL}}/issues/new" target="_blank" rel="noopener">提交 Issue</a> 或 <a href="{{REPO_URL}}/blob/main/CONTRIBUTING.md" target="_blank" rel="noopener">发起 PR</a> 推荐给大家</p>
+    </div>
+    {{CONTENT}}
+  </main>
+</div>
+
+<footer class="footer">
+  <div class="footer-inner">
+    <a class="footer-brand" href="#top"><img src="assets/favicon.svg" alt="" width="28" height="28"><span>Awesome <b>AI</b></span></a>
+    <p>最全面、最权威的中文人工智能资源全景图 · 本站由仓库中的 <a href="{{REPO_URL}}/blob/main/README.md" target="_blank" rel="noopener">README.md</a> 与 <a href="{{REPO_URL}}/tree/main/docs" target="_blank" rel="noopener">docs/</a> 清单自动生成，并每周自动刷新 Star 数据</p>
+    <p class="footer-links">
+      <a href="{{REPO_URL}}" target="_blank" rel="noopener">GitHub 仓库</a>
+      <a href="{{REPO_URL}}/blob/main/CONTRIBUTING.md" target="_blank" rel="noopener">贡献指南</a>
+      <a href="{{REPO_URL}}/issues" target="_blank" rel="noopener">问题反馈</a>
+      <a href="data.json" target="_blank" rel="noopener">数据（JSON）</a>
+    </p>
+    <p class="muted">更新于 {{DATE}} · Made with ❤ by <a href="https://github.com/YSGStudyHards" target="_blank" rel="noopener">YSGStudyHards</a> 与所有贡献者</p>
+  </div>
+</footer>
+
+<button class="to-top" id="toTop" type="button" aria-label="回到顶部">
+  <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 19V5M6 11l6-6 6 6"/></svg>
+</button>
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
+<script src="{{JS}}" defer></script>
+</body>
+</html>
