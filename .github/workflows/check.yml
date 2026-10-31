@@ -1,0 +1,40 @@
+name: 清单格式校验
+
+on:
+  pull_request:
+    paths:
+      - README.md
+      - docs/**
+      - site/**
+      - scripts/**
+      - .github/workflows/check.yml
+  push:
+    branches: [main]
+    paths:
+      - README.md
+      - docs/**
+      - site/**
+      - scripts/**
+      - .github/workflows/check.yml
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v7
+
+      - uses: actions/setup-node@v7
+        with:
+          node-version: 24
+
+      - name: 校验清单格式与链接
+        run: node scripts/build-site.mjs --check
+
+      - name: 试构建站点
+        run: node scripts/build-site.mjs
+        env:
+          NO_STARS: '1'
