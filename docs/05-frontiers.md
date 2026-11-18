@@ -149,6 +149,7 @@
 | AI Incident Database | Responsible AI Collaborative | 收录真实世界 AI 事故与危害事件的公开数据库 | https://incidentdatabase.ai/ |
 | Foundation Model Transparency Index | 斯坦福 CRFM | 从数据、算力、风险等维度评估基础模型开发者透明度的指数 | https://crfm.stanford.edu/fmti/ |
 | FLI AI Safety Index | 未来生命研究所 | 对主要 AI 公司风险评估、安全框架与治理实践进行评级的指数 | https://futureoflife.org/ai-safety-index-summer-2026/ |
+| TrustHawk | TrustHawk | 依据各公司公开资料，从安全、透明度、隐私与网络安全四个维度为 150 多家 AI 公司评分，每项分数附来源链接 | https://trusthawk.ai/ |
 | Partnership on AI | Partnership on AI | 由企业、学界与民间组织组成的负责任 AI 非营利联盟 | https://partnershiponai.org/ |
 
 ---
